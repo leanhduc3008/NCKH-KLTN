@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "199733170254",
+    "firebase_url": "https://request-ticket-f0db9-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "request-ticket-f0db9",
+    "storage_bucket": "request-ticket-f0db9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:199733170254:android:bdead482ef837b1cb8b31f",
+        "android_client_info": {
+          "package_name": "com.imt.request.ticket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "199733170254-m3l883554dhs5p8voc4506esqcg869gr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrHj6e0-OosUx5d8qzkkfCehcT9tOvQm0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "199733170254-m3l883554dhs5p8voc4506esqcg869gr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "199733170254-2c641e2d86ls23p3cs05j3t74toh31qc.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.imt.ticket"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,77 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Generate",
+			"dependsOrder": "sequence",
+			"dependsOn": [
+				"Flutter: flutter pub get",
+				"Flutter: flutter pub run build_runner build --delete-conflicting-outputs",
+				"Flutter: flutter pub run intl_utils:generates"
+			],
+			"problemMatcher": []
+		},
+		{
+			"label": "Fix and format",
+			"dependsOrder": "sequence",
+			"dependsOn": [
+				"Dart: dart fix --apply",
+				"Dart: dart format ."
+			]
+		},
+		{
+			"label": "Flutter: flutter pub get",
+			"type": "flutter",
+			"command": "flutter",
+			"args": [
+				"pub",
+				"get"
+			]
+		},
+		{
+			"label": "Flutter: flutter pub run build_runner build --delete-conflicting-outputs",
+			"type": "flutter",
+			"command": "flutter",
+			"args": [
+				"pub",
+				"run",
+				"build_runner",
+				"build",
+				"--delete-conflicting-outputs"
+			],
+			"problemMatcher": [
+				"$dart-build_runner"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Flutter: flutter pub run intl_utils:generates",
+			"type": "flutter",
+			"command": "flutter",
+			"args": [
+				"pub",
+				"run",
+				"intl_utils:generate"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Dart: dart fix --apply",
+			"type": "dart",
+			"command": "dart",
+			"args": [
+				"fix",
+				"--apply"
+			]
+		},
+		{
+			"label": "Dart: dart format .",
+			"type": "dart",
+			"command": "dart",
+			"args": [
+				"format",
+				"."
+			]
+		}
+	]
+}

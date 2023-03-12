@@ -1,0 +1,20 @@
+pre-commit:
+  commands:
+    format:
+      run: dart format --fix . && git add .
+  scripts:
+    "pre-commit.sh":
+      runner: bash
+
+commit-msg:
+  scripts:
+    "commit-msg.sh":
+      runner: bash
+
+pre-push:
+  parallel: true
+  commands:
+    analysis:
+      run: flutter analyze
+    tests:
+      run: flutter test
